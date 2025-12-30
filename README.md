@@ -27,3 +27,7 @@ Monorepo-style ROS 2 workspace that combines multi-robot Gazebo simulation, Move
 
 colcon build --symlink-install
 source install/setup.bash
+
+## Demo
+
+[Watch the demo video](https://github.com/Oussama1209/CynLr_Dual_Arm/releases/download/video/Screen.Recording.2025-12-26.130635.mp4)
