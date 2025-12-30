@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot name="grasp_cube" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find multi_robot_arm)/urdf/gazebo_cube.xacro"/>
+
+  <link name="cube">
+    <collision name="collision">
+      <geometry><box size="0.1 0.1 0.1"/></geometry>
+    </collision>
+
+    <visual name="visual">
+      <geometry><box size="0.1 0.1 0.1"/></geometry>
+      <!-- RViz color (optional) -->
+      <material name="yellow">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001667" ixy="0" ixz="0"
+               iyy="0.0001667" iyz="0"
+               izz="0.0001667"/>
+    </inertial>
+  </link>
+
+  <!-- This is what Gazebo actually uses -->
+  <xacro:gazebo_material_for_link link_name="cube" material="Gazebo/Yellow" mu1="10" mu2="10"/>
+
+</robot>

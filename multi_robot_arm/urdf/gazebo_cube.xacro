@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Apply Gazebo material + optional friction to a given link -->
+  <xacro:macro name="gazebo_material_for_link" params="link_name material:=Gazebo/Yellow mu1:=10 mu2:=10">
+    <gazebo reference="${link_name}">
+      <material>${material}</material>
+      <mu1>${mu1}</mu1>
+      <mu2>${mu2}</mu2>
+    </gazebo>
+  </xacro:macro>
+
+</robot>
