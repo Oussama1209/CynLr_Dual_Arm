@@ -27,8 +27,8 @@ Monorepo-style ROS 2 workspace that combines multi-robot Gazebo simulation, Move
 
 ## Build
 
-colcon build
-source install/setup.bash
+`colcon build`
+`source install/setup.bash`
 
 ## Workflow (high level)
 
