@@ -20,12 +20,19 @@ Monorepo-style ROS 2 workspace that combines multi-robot Gazebo simulation, Move
 
 ## Workflow (high level)
 
-1. Launch simulation from `ros2 launch multi_robot_arm multi_robot_arm.launch.py`.
+1. Launch simulation from `ros2 launch multi_robot_arm gazebo_arm.launch.py`.
 2. Launch the vision identification via `ros2 launch ball_tracker ball_tracker.launch.py`.
+
+## Installation requirements
+
+1. Install all requirements from each folder by following their respective READMEs
+2. Delete all content from src folder of your ROS2 workspace
+3. Clone this repository
+4. Move all content of this repo to the src directory of your ROS2 workspace
 
 ## Build
 
-colcon build --symlink-install
+colcon build
 source install/setup.bash
 
 ## Demo
