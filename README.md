@@ -20,10 +20,11 @@ Monorepo-style ROS 2 workspace that combines multi-robot Gazebo simulation, Move
 
 ## Installation requirements
 
-1. Install all requirements from each folder by following their respective READMEs
-2. Delete all content from src folder of your ROS2 workspace
-3. Clone this repository
-4. Move all content of this repo to the src directory of your ROS2 workspace
+1. Ubuntu 20.04 and ROS2 Foxy
+2. Install all requirements from each folder by following their respective READMEs
+3. Delete all content from src folder of your ROS2 workspace
+4. Clone this repository
+5. Move all content of this repo to the src directory of your ROS2 workspace
 
 ## Build
 
